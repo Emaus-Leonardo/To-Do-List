@@ -4,8 +4,8 @@
   --color-dark2: rgb(32, 32, 32);
   --color-dark3: rgb(22, 22, 22);
   --color-white: #fff;
-  --color-green: rgb(138, 43, 226);
-  --color-green2: rgb(148, 0, 211);
+  --color-purple: rgb(138, 43, 226);
+  --color-purple2: rgb(128, 3, 182);
   --color-red: rgb(184, 40, 35);
   --color-red2: rgb(146, 22, 17);
 }
@@ -23,6 +23,15 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 4rem;
+}
+
+
+container {
+  width: 500px;
+  height: 500px;
+  background-color: var(--color-white);
+  border-radius: 2rem;
+  padding: 20px;
 }
 
 .content {
@@ -50,6 +59,7 @@ body {
   width: 20rem;
 
   border-radius: 1rem;
+  
 }
 
 #btn-new-task {
@@ -84,4 +94,38 @@ body {
 
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
+  transition: .4s;
+}
+
+#to-do-list li:hover {
+  background-color: var(--color-dark3);
+
+  border-radius: 1rem;
+  padding-left: 1rem;
+}
+
+#btn-ok {
+  border: none;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+
+  background-color: var(--color-purple);
+  color: var(--color-white);
+
+  padding: .4rem .8rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+
+  cursor: pointer;
+
+  transition: .4s;
+}
+
+#btn-ok:hover {
+  background-color: var(--color-purple2);
 }
