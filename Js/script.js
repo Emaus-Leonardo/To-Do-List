@@ -59,6 +59,7 @@ function removeItem(data) {
 function prevPage() {
   if (currentPage > 1) {
     currentPage--;
+    updatePageNumber();
     showValues();
   }
 }
@@ -68,11 +69,17 @@ function nextPage() {
   let totalPages = Math.ceil(values.length / itemsPerPage);
   if (currentPage < totalPages) {
     currentPage++;
+    updatePageNumber();
     showValues();
   } else {
     currentPage = totalPages;
     showValues();
   }
+}
+
+function updatePageNumber() {
+  const pageNumberElement = document.getElementById("page-number");
+  pageNumberElement.textContent = currentPage;
 }
 
 document

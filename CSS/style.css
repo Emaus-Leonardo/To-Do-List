@@ -181,6 +181,10 @@ body {
   transition: 0.4s;
 }
 
+.next {
+  width: 75px;
+}
+
 .next:hover {
   background-color: var(--color-purple2);
 }
