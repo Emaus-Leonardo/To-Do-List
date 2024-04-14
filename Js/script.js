@@ -1,5 +1,5 @@
 const localStorageKey = "to-do-list";
-const itemsPerPage = 5; // Altere o número de itens por página conforme necessário
+const itemsPerPage = 6;
 let currentPage = 1;
 
 function validatedIfExistesNewTask(inputValue) {
@@ -70,11 +70,18 @@ function nextPage() {
     currentPage++;
     showValues();
   } else {
-    // Se não houver mais páginas, vamos para a última página
     currentPage = totalPages;
     showValues();
   }
 }
+
+document
+  .getElementById("input-new-task")
+  .addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
+      newTask();
+    }
+  });
 
 // Initial call to display any existing tasks
 showValues();
