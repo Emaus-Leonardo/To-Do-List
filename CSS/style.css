@@ -47,6 +47,8 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 4rem;
+
+  height: 100%;
 }
 
 .content-add-item {
@@ -97,6 +99,10 @@ body {
 
 #btn-new-task:hover {
   background-color: var(--color-dark3);
+}
+
+.content--body {
+  height: 70%;
 }
 
 #to-do-list {
@@ -155,7 +161,7 @@ body {
 
   gap: 5px;
   padding: 1rem;
-  margin-top: 1rem;
+  margin-top: auto;
 }
 
 .next,
