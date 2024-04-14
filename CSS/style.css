@@ -30,7 +30,7 @@ body {
 .container {
   width: 450px;
   height: 550px;
-  margin: auto; 
+  margin: auto;
 
   background-color: var(--color-dark);
   border-radius: 2rem;
@@ -178,10 +178,7 @@ body {
   width: 75px;
 }
 
-.next:hover {
-  background-color: var(--color-purple2);
-}
-
+.next:hover,
 .previous:hover {
   background-color: var(--color-purple2);
 }
