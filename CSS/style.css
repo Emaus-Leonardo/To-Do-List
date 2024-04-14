@@ -16,13 +16,6 @@
   font-weight: 400;
 }
 
-h1 {
-  color: var(--color-dark);
-  font-weight: 700;
-
-  margin-top: 60px;
-}
-
 body {
   height: 100vh;
 
